@@ -7,16 +7,23 @@
 //
 
 import UIKit
+import AVFoundation
 
-class PinterestViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class PinterestViewController: UIViewController, PinterestLayoutDelegate {
 
     var images = ["breach","grouper","ray","shark","turtle","whale"]
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+        
+        if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
+            print("Pinterest Layout")
+            layout.delegate = self
+        }
+        else{
+            print("No Layout")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +31,22 @@ class PinterestViewController: UIViewController, UICollectionViewDataSource, UIC
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK: PinterestLayoutDelegate
+    func collectionView(collectionView:UICollectionView, heightForPhotoAtIndexPath indexPath:NSIndexPath,
+        withWidth width:CGFloat) -> CGFloat {
+            let index = indexPath.row % 6
+            let photo = UIImage(named: self.images[index])
+            let boundingRect =  CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
+            let rect  = AVMakeRectWithAspectRatioInsideRect(photo!.size, boundingRect)
+            return rect.size.height
+    }
+    
+    func collectionView(collectionView: UICollectionView,
+        heightForAnnotationAtIndexPath indexPath: NSIndexPath, withWidth width: CGFloat) -> CGFloat {
+            return 75
+    }
+    
+    //MARK: UICollectionViewDelegate
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 15
     }

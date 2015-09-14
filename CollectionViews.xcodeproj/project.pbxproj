@@ -19,6 +19,7 @@
 		C5A983F71BA4969F00DF29DD /* CollectionViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A983F61BA4969F00DF29DD /* CollectionViewsTests.swift */; };
 		C5A984131BA5115F00DF29DD /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A984121BA5115F00DF29DD /* MenuCell.swift */; };
 		C5DBD5571BA66357009997F3 /* PinterestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBD5561BA66357009997F3 /* PinterestCell.swift */; };
+		C5DBD55F1BA68A68009997F3 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBD55E1BA68A68009997F3 /* PinterestLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		C5A983FD1BA4969F00DF29DD /* CollectionViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A984121BA5115F00DF29DD /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = Cells/MenuCell.swift; sourceTree = "<group>"; };
 		C5DBD5561BA66357009997F3 /* PinterestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestCell.swift; path = Cells/PinterestCell.swift; sourceTree = "<group>"; };
+		C5DBD55E1BA68A68009997F3 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				C51A82861BA6469500CD4E7E /* GridViewController.swift */,
 				C51A828A1BA64FDD00CD4E7E /* PreviewViewController.swift */,
 				C51A82881BA64FD600CD4E7E /* PinterestViewController.swift */,
+				C5DBD55E1BA68A68009997F3 /* PinterestLayout.swift */,
 				C5A9840F1BA510E100DF29DD /* Cells */,
 				C5A983E81BA4969F00DF29DD /* Assets.xcassets */,
 				C5A983EA1BA4969F00DF29DD /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				C5A983E21BA4969F00DF29DD /* AppDelegate.swift in Sources */,
 				C5DBD5571BA66357009997F3 /* PinterestCell.swift in Sources */,
 				C5A984131BA5115F00DF29DD /* MenuCell.swift in Sources */,
+				C5DBD55F1BA68A68009997F3 /* PinterestLayout.swift in Sources */,
 				C51A82891BA64FD600CD4E7E /* PinterestViewController.swift in Sources */,
 				C51A828B1BA64FDD00CD4E7E /* PreviewViewController.swift in Sources */,
 			);

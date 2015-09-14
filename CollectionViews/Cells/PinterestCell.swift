@@ -12,4 +12,14 @@ import UIKit
 class PinterestCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var itemLabel: UILabel!
+    @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
+    
+    override func awakeFromNib() {
+        self.layer.cornerRadius = 6
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.imageHeightConstraint.constant = self.frame.size.height - 75
+    }
 }
