@@ -23,7 +23,7 @@ class PinterestLayout: UICollectionViewLayout {
     var cellPadding: CGFloat = 6.0
     
     //Cache layout attributes, custom attr class
-    private var cache = [PinterestLayoutAttributes]()
+    private var cache = [UICollectionViewLayoutAttributes]()
     
     //dynamically generate height/width for collectionView
     private var contentHeight: CGFloat  = 0.0
@@ -61,8 +61,7 @@ class PinterestLayout: UICollectionViewLayout {
                 let insetFrame = CGRectInset(frame, cellPadding, cellPadding)
                 
                 //Cache attributes for EACH item
-                let attributes = PinterestLayoutAttributes(forCellWithIndexPath: indexPath)
-                attributes.photoHeight = photoHeight
+                let attributes = UICollectionViewLayoutAttributes(forCellWithIndexPath: indexPath)
                 attributes.frame = insetFrame
                 cache.append(attributes)
                 
@@ -91,32 +90,5 @@ class PinterestLayout: UICollectionViewLayout {
             }
         }
         return layoutAttributes
-    }
-    
-    override class func layoutAttributesClass() -> AnyClass {
-        return PinterestLayoutAttributes.self
-    }
-}
-
-//Custom cell layout attributes
-class PinterestLayoutAttributes: UICollectionViewLayoutAttributes {
-    
-    var photoHeight: CGFloat = 0.0
-    
-    //Allows you to reuse attributes, changing only the height
-    override func copyWithZone(zone: NSZone) -> AnyObject {
-        let copy = super.copyWithZone(zone) as! PinterestLayoutAttributes
-        copy.photoHeight = photoHeight
-        return copy
-    }
-    
-    //Check for equal attr, for use in reuse code
-    override func isEqual(object: AnyObject?) -> Bool {
-        if let attributes = object as? PinterestLayoutAttributes {
-            if( attributes.photoHeight == photoHeight  ) {
-                return super.isEqual(object)
-            }
-        }
-        return false
     }
 }

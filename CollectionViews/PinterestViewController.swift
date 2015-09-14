@@ -11,7 +11,7 @@ import AVFoundation
 
 class PinterestViewController: UIViewController, PinterestLayoutDelegate {
 
-    var images = ["breach","grouper","ray","shark","turtle","whale"]
+    var images = ["breach","whale","grouper","ray","shark","turtle","fish"]
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -34,7 +34,7 @@ class PinterestViewController: UIViewController, PinterestLayoutDelegate {
     //MARK: PinterestLayoutDelegate
     func collectionView(collectionView:UICollectionView, heightForPhotoAtIndexPath indexPath:NSIndexPath,
         withWidth width:CGFloat) -> CGFloat {
-            let index = indexPath.row % 6
+            let index = indexPath.row % 7
             let photo = UIImage(named: self.images[index])
             let boundingRect =  CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
             let rect  = AVMakeRectWithAspectRatioInsideRect(photo!.size, boundingRect)
@@ -53,7 +53,7 @@ class PinterestViewController: UIViewController, PinterestLayoutDelegate {
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell:PinterestCell = collectionView.dequeueReusableCellWithReuseIdentifier("item", forIndexPath: indexPath) as! PinterestCell
-        let index = indexPath.row % 6
+        let index = indexPath.row % 7
         cell.imageView.image = UIImage(named: self.images[index])
         return cell
     }
