@@ -29,10 +29,14 @@ class PinterestLayout: UICollectionViewLayout {
         return CGRectGetWidth(collectionView!.bounds) - (insets.left + insets.right)
     }
     
+    //Here we essentially loop over all of our content and 
+    //calculate the positions of each and every cell, then
+    //cache the position for later use as the user scrolls
     override func prepareLayout() {
         
         //Only prepare this once
         if cache.isEmpty {
+            
             //Set up column width and initialize column/item positions at 0
             let columnWidth = contentWidth / CGFloat(numberOfColumns)
             var xOffset = [CGFloat]()
@@ -64,6 +68,8 @@ class PinterestLayout: UICollectionViewLayout {
                 contentHeight = max(contentHeight, CGRectGetMaxY(frame))
                 yOffset[column] = yOffset[column] + height
                 
+                //Add one item to the next spot in each column, then
+                //return to the first column and start over
                 column = column >= (numberOfColumns - 1) ? 0 : ++column
             }
         }
@@ -74,7 +80,7 @@ class PinterestLayout: UICollectionViewLayout {
         return CGSize(width: contentWidth, height: contentHeight)
     }
     
-    //Return layout attributes on-demand
+    //Return layout attributes for collection
     override func layoutAttributesForElementsInRect(rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         
         var layoutAttributes = [UICollectionViewLayoutAttributes]()
