@@ -16,7 +16,6 @@
 		C5A983E71BA4969F00DF29DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A983E51BA4969F00DF29DD /* Main.storyboard */; };
 		C5A983E91BA4969F00DF29DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A983E81BA4969F00DF29DD /* Assets.xcassets */; };
 		C5A983EC1BA4969F00DF29DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A983EA1BA4969F00DF29DD /* LaunchScreen.storyboard */; };
-		C5A983F71BA4969F00DF29DD /* CollectionViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A983F61BA4969F00DF29DD /* CollectionViewsTests.swift */; };
 		C5A984131BA5115F00DF29DD /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A984121BA5115F00DF29DD /* MenuCell.swift */; };
 		C5DBD5571BA66357009997F3 /* PinterestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBD5561BA66357009997F3 /* PinterestCell.swift */; };
 		C5DBD55F1BA68A68009997F3 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBD55E1BA68A68009997F3 /* PinterestLayout.swift */; };
@@ -52,8 +51,6 @@
 		C5A983EB1BA4969F00DF29DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5A983ED1BA4969F00DF29DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A983F21BA4969F00DF29DD /* Collections.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Collections.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5A983F61BA4969F00DF29DD /* CollectionViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsTests.swift; sourceTree = "<group>"; };
-		C5A983F81BA4969F00DF29DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A983FD1BA4969F00DF29DD /* Collections.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Collections.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A984121BA5115F00DF29DD /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = Cells/MenuCell.swift; sourceTree = "<group>"; };
 		C5DBD5561BA66357009997F3 /* PinterestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestCell.swift; path = Cells/PinterestCell.swift; sourceTree = "<group>"; };
@@ -89,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				C5A983E01BA4969F00DF29DD /* CollectionViews */,
-				C5A983F51BA4969F00DF29DD /* CollectionViewsTests */,
 				C5A983DF1BA4969F00DF29DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,15 +116,6 @@
 				C5A983ED1BA4969F00DF29DD /* Info.plist */,
 			);
 			path = CollectionViews;
-			sourceTree = "<group>";
-		};
-		C5A983F51BA4969F00DF29DD /* CollectionViewsTests */ = {
-			isa = PBXGroup;
-			children = (
-				C5A983F61BA4969F00DF29DD /* CollectionViewsTests.swift */,
-				C5A983F81BA4969F00DF29DD /* Info.plist */,
-			);
-			path = CollectionViewsTests;
 			sourceTree = "<group>";
 		};
 		C5A9840F1BA510E100DF29DD /* Cells */ = {
@@ -288,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5A983F71BA4969F00DF29DD /* CollectionViewsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
