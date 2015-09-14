@@ -18,27 +18,8 @@ class PinterestViewController: UIViewController, PinterestLayoutDelegate {
         super.viewDidLoad()
         
         if let layout = collectionView?.collectionViewLayout as? PinterestLayout {
-            print("Pinterest Layout")
             layout.delegate = self
         }
-        else{
-            print("No Layout")
-        }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    //MARK: PinterestLayoutDelegate
-    func collectionView(collectionView:UICollectionView, heightForPhotoAtIndexPath indexPath:NSIndexPath,
-        withWidth width:CGFloat) -> CGFloat {
-            let index = indexPath.row % 7
-            let photo = UIImage(named: self.images[index])
-            let boundingRect =  CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
-            let rect  = AVMakeRectWithAspectRatioInsideRect(photo!.size, boundingRect)
-            return rect.size.height
     }
     
     //MARK: UICollectionViewDelegate
@@ -51,5 +32,15 @@ class PinterestViewController: UIViewController, PinterestLayoutDelegate {
         let index = indexPath.row % 7
         cell.imageView.image = UIImage(named: self.images[index])
         return cell
+    }
+    
+    //MARK: PinterestLayoutDelegate
+    func collectionView(collectionView:UICollectionView, heightForPhotoAtIndexPath indexPath:NSIndexPath,
+        withWidth width:CGFloat) -> CGFloat {
+            let index = indexPath.row % 7
+            let photo = UIImage(named: self.images[index])
+            let boundingRect =  CGRect(x: 0, y: 0, width: width, height: CGFloat(MAXFLOAT))
+            let rect  = AVMakeRectWithAspectRatioInsideRect(photo!.size, boundingRect)
+            return rect.size.height
     }
 }
