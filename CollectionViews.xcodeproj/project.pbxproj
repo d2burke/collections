@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C51A82871BA6469500CD4E7E /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A82861BA6469500CD4E7E /* GridViewController.swift */; };
+		C51A82891BA64FD600CD4E7E /* PinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A82881BA64FD600CD4E7E /* PinterestViewController.swift */; };
+		C51A828B1BA64FDD00CD4E7E /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A828A1BA64FDD00CD4E7E /* PreviewViewController.swift */; };
+		C51A828D1BA65E7C00CD4E7E /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51A828C1BA65E7C00CD4E7E /* PreviewCell.swift */; };
 		C5A983E21BA4969F00DF29DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A983E11BA4969F00DF29DD /* AppDelegate.swift */; };
 		C5A983E41BA4969F00DF29DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A983E31BA4969F00DF29DD /* ViewController.swift */; };
 		C5A983E71BA4969F00DF29DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A983E51BA4969F00DF29DD /* Main.storyboard */; };
 		C5A983E91BA4969F00DF29DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A983E81BA4969F00DF29DD /* Assets.xcassets */; };
 		C5A983EC1BA4969F00DF29DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5A983EA1BA4969F00DF29DD /* LaunchScreen.storyboard */; };
 		C5A983F71BA4969F00DF29DD /* CollectionViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A983F61BA4969F00DF29DD /* CollectionViewsTests.swift */; };
-		C5A984021BA4969F00DF29DD /* CollectionViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A984011BA4969F00DF29DD /* CollectionViewsUITests.swift */; };
+		C5A984131BA5115F00DF29DD /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A984121BA5115F00DF29DD /* MenuCell.swift */; };
+		C5DBD5571BA66357009997F3 /* PinterestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DBD5561BA66357009997F3 /* PinterestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C51A82861BA6469500CD4E7E /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		C51A82881BA64FD600CD4E7E /* PinterestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestViewController.swift; sourceTree = "<group>"; };
+		C51A828A1BA64FDD00CD4E7E /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		C51A828C1BA65E7C00CD4E7E /* PreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviewCell.swift; path = Cells/PreviewCell.swift; sourceTree = "<group>"; };
 		C5A983DE1BA4969F00DF29DD /* CollectionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5A983E11BA4969F00DF29DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5A983E31BA4969F00DF29DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,8 +54,8 @@
 		C5A983F61BA4969F00DF29DD /* CollectionViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsTests.swift; sourceTree = "<group>"; };
 		C5A983F81BA4969F00DF29DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5A983FD1BA4969F00DF29DD /* CollectionViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5A984011BA4969F00DF29DD /* CollectionViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewsUITests.swift; sourceTree = "<group>"; };
-		C5A984031BA4969F00DF29DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A984121BA5115F00DF29DD /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuCell.swift; path = Cells/MenuCell.swift; sourceTree = "<group>"; };
+		C5DBD5561BA66357009997F3 /* PinterestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PinterestCell.swift; path = Cells/PinterestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +88,6 @@
 			children = (
 				C5A983E01BA4969F00DF29DD /* CollectionViews */,
 				C5A983F51BA4969F00DF29DD /* CollectionViewsTests */,
-				C5A984001BA4969F00DF29DD /* CollectionViewsUITests */,
 				C5A983DF1BA4969F00DF29DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,8 +106,12 @@
 			isa = PBXGroup;
 			children = (
 				C5A983E11BA4969F00DF29DD /* AppDelegate.swift */,
-				C5A983E31BA4969F00DF29DD /* ViewController.swift */,
 				C5A983E51BA4969F00DF29DD /* Main.storyboard */,
+				C5A983E31BA4969F00DF29DD /* ViewController.swift */,
+				C51A82861BA6469500CD4E7E /* GridViewController.swift */,
+				C51A828A1BA64FDD00CD4E7E /* PreviewViewController.swift */,
+				C51A82881BA64FD600CD4E7E /* PinterestViewController.swift */,
+				C5A9840F1BA510E100DF29DD /* Cells */,
 				C5A983E81BA4969F00DF29DD /* Assets.xcassets */,
 				C5A983EA1BA4969F00DF29DD /* LaunchScreen.storyboard */,
 				C5A983ED1BA4969F00DF29DD /* Info.plist */,
@@ -116,13 +128,14 @@
 			path = CollectionViewsTests;
 			sourceTree = "<group>";
 		};
-		C5A984001BA4969F00DF29DD /* CollectionViewsUITests */ = {
+		C5A9840F1BA510E100DF29DD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				C5A984011BA4969F00DF29DD /* CollectionViewsUITests.swift */,
-				C5A984031BA4969F00DF29DD /* Info.plist */,
+				C5A984121BA5115F00DF29DD /* MenuCell.swift */,
+				C51A828C1BA65E7C00CD4E7E /* PreviewCell.swift */,
+				C5DBD5561BA66357009997F3 /* PinterestCell.swift */,
 			);
-			path = CollectionViewsUITests;
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,8 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51A82871BA6469500CD4E7E /* GridViewController.swift in Sources */,
+				C51A828D1BA65E7C00CD4E7E /* PreviewCell.swift in Sources */,
 				C5A983E41BA4969F00DF29DD /* ViewController.swift in Sources */,
 				C5A983E21BA4969F00DF29DD /* AppDelegate.swift in Sources */,
+				C5DBD5571BA66357009997F3 /* PinterestCell.swift in Sources */,
+				C5A984131BA5115F00DF29DD /* MenuCell.swift in Sources */,
+				C51A82891BA64FD600CD4E7E /* PinterestViewController.swift in Sources */,
+				C51A828B1BA64FDD00CD4E7E /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5A984021BA4969F00DF29DD /* CollectionViewsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +501,7 @@
 				C5A984081BA4969F00DF29DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5A984091BA4969F00DF29DD /* Build configuration list for PBXNativeTarget "CollectionViewsTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +510,7 @@
 				C5A9840B1BA4969F00DF29DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5A9840C1BA4969F00DF29DD /* Build configuration list for PBXNativeTarget "CollectionViewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +519,7 @@
 				C5A9840E1BA4969F00DF29DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
