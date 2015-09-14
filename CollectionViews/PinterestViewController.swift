@@ -48,7 +48,7 @@ class PinterestViewController: UIViewController, PinterestLayoutDelegate {
     
     //MARK: UICollectionViewDelegate
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return 12
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

@@ -208,6 +208,7 @@
 				TargetAttributes = {
 					C5A983DD1BA4969E00DF29DD = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = LYK6R6UC8J;
 					};
 					C5A983F11BA4969F00DF29DD = {
 						CreatedOnToolsVersion = 7.1;
@@ -420,7 +421,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CollectionViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.d2burke.CollectionViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,7 +434,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CollectionViews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.d2burke.CollectionViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
