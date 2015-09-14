@@ -41,11 +41,6 @@ class PinterestViewController: UIViewController, PinterestLayoutDelegate {
             return rect.size.height
     }
     
-    func collectionView(collectionView: UICollectionView,
-        heightForAnnotationAtIndexPath indexPath: NSIndexPath, withWidth width: CGFloat) -> CGFloat {
-            return 75
-    }
-    
     //MARK: UICollectionViewDelegate
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 12
